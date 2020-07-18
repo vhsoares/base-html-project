@@ -3,18 +3,152 @@
   <head>
     <meta charset="utf-8">
     <title>TextuAll - Tudo pode ser texto</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="vendor/Jquery-3.5.1/jquery.min.js" type="text/javascript"></script>
+    <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/system-min.js" type="text/javascript"></script>
   </head>
   <body>
+
     <nav class="navigation">
       <div class="navigation-logo">
-
+        <img src="img/logo.png" alt="">
       </div>
       <ul class="navigation-list">
-        <li class="navigation-item"><a href="#" class="navigation-link"></a></li>
-        <li class="navigation-item"><a href="#" class="navigation-link"></a></li>
-        <li class="navigation-item"><a href="#" class="navigation-link"></a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link">Serviços</a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link">Quem Somos</a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link">Blog</a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link">Orçamento</a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link">Contato</a></li>
       </ul>
     </nav>
+
+    <section class="banner">
+      <div class="container text-center">
+        <div class="col-16">
+              <img src="img/logo-clean.png" class="img-fluid" alt="" width="800px">
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="container">
+      <div class="col-16">
+        <h1>Serviços</h1>
+      </div>
+
+      <div class="circles">
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ad aspernatur ullam culpa laudantium reiciendis! Perspiciatis incidunt quam, provident quod fuga labore totam nostrum aliquam molestias commodi nemo sed reprehenderit.
+      </div>
+
+
+    </section>
+    <section id="portfolio" class="container">
+        <h1>Portfolio</h1>
+    </section>
+    <section id="depoimentos">
+      <div class="container">
+        <h1>Depoimentos</h1>
+        <div class=" owl-depoimentos owl-carousel owl-theme">
+          <div class="item">
+            <div class="depoimento">
+              <p class="depoimento-frase">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sapiente dolores deserunt exercitationem. Ea, commodi id, doloribus eius ratione eveniet vel officiis cum necessitatibus quaerat non! Obcaecati optio quam distinctio?
+              </p>
+              <img src="http://placehold.it/100x100" class="depoimento-foto" alt="">
+              <span class="depoimento-nome"> - Ronaldo</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="depoimento">
+              <p class="depoimento-frase">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sapiente dolores deserunt exercitationem. Ea, commodi id, doloribus eius ratione eveniet vel officiis cum necessitatibus quaerat non! Obcaecati optio quam distinctio?
+              </p>
+              <img src="http://placehold.it/100x100" class="depoimento-foto" alt="">
+              <span class="depoimento-nome"> - Ronaldo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog" class="container">
+        <h1>Blog</h1>
+        <div class="carousel-blog owl-carousel owl-theme">
+
+        <div class="item">
+          <a class="article">
+            <img src="http://placehold.it/300x200" alt="" class="article-foto">
+            <h6 class="article-title">Título do Blog e Verificação</h6>
+          </a>
+        </div>
+
+        <div class="item">
+          <a class="article">
+            <img src="http://placehold.it/300x200" alt="" class="article-foto">
+            <h6 class="article-title">Título do Blog e Verificação</h6>
+          </a>
+        </div>
+
+        <div class="item">
+          <a class="article">
+            <img src="http://placehold.it/300x200" alt="" class="article-foto">
+            <h6 class="article-title">Título do Blog e Verificação</h6>
+          </a>
+        </div>
+
+        <div class="item">
+          <a class="article">
+            <img src="http://placehold.it/300x200" alt="" class="article-foto">
+            <h6 class="article-title">Título do Blog e Verificação</h6>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container text-center">
+          <h1>Contatos</h1>
+        <div class="col-5">
+          <h6 class="text-center">Siga a TEXTUALL nas redes sociais:</h6>
+          <a href="" class="social-icons"><i data-feather="facebook"></i>
+            <span>/textuall</span>
+          </a>
+          <a href="" class="social-icons"><i data-feather="instagram"></i> <span>@textuall</span></a>
+        </div>
+        <div class="col-5">
+          <h6 class="text-center">Para ligar:</h6>
+          <p>(51) 9-8402-5330</p>
+        </div>
+        <div class="col-5">
+          <h6 class="text-center">Para mandar e-mail:</h6>
+          <p>oi.textuall@gmail.com</p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="text-center">
+        Feito com <i data-feather="heart"></i> pela equipe TextuAll. <span class="tudo-texto">#TudoPodeSerTexto</span>
+      </div>
+    </footer>
+
   </body>
 </html>

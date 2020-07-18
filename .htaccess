@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !^/app/
+RewriteRule ^(.*)$ /app/$1 [301,L]
+
+Redirect 301 "/" "/app/"
+
+RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+RewriteRule ^ %1 [L,NE,R=302]
+
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]

@@ -1,0 +1,25 @@
+@mixin column($colnumbers) {
+  .col-#{$colnumbers}{
+    width: (100%/16*$colnumbers);
+    padding: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  max-width: 100%;
+  width: 1100px;
+  flex-wrap: wrap;
+}
+
+.img-fluid {
+  max-width: 100%;
+  display: inline-block;
+}
+
+@for $i from 1 through 16 {
+  @include column($i);
+}

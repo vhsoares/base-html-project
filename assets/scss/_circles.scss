@@ -1,0 +1,46 @@
+.circles {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  $numberOfItems: 8;
+  $angleOfCircle: 360;
+  $rotate: 0;
+  $angle: ($angleOfCircle / $numberOfItems);
+
+  ul {
+    @for $item from 0 to $numberOfItems {
+      li:nth-of-type(#{$item}) {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        list-style: none;
+        top: 50%;
+        left: 50%;
+        height: 110px;
+        width: 110px;
+        margin: -(110px /2);
+        text-align: center;
+        background-color: #fff;
+        border-radius: 50%;
+        border: solid 2px rgb(119, 207, 130);
+        box-sizing: border-box;
+        transition: 350ms;
+        transform: rotate(($rotate * 1deg)) translate((400px/2)) rotate(($rotate * -1deg));
+      }
+      $rotate: $rotate + $angle;
+    }
+
+    a {
+      color: rgb(89, 157, 100);
+      text-decoration: none;
+      display: block;
+      width: 110px;
+      height: 110px;
+    }
+  }
+}

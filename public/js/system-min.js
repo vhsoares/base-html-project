@@ -1,0 +1,1 @@
+window.onload=(()=>{feather.replace()}),$(document).ready(function(){$(".owl-depoimentos").owlCarousel({loop:!0,margin:10,nav:!1,items:1}),$(".carousel-blog").owlCarousel({loop:!0,margin:30,nav:!1,responsive:{0:{items:1},768:{items:2},1000:{items:5}}})});
